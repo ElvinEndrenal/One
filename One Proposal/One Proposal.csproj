@@ -70,7 +70,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\assets\logo_primary.png" />
 	  <None Remove="Resources\Images\icon_assets\dashboar.svg" />
+	  <None Remove="Resources\Images\icon_assets\ico_dashboard.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,7 +81,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Images\assets\logo_primary.png" />
 	  <MauiImage Include="Resources\Images\assets\logo_second.png" />
+	  <MauiImage Include="Resources\Images\icon_assets\ico_dashboard.svg" />
 	</ItemGroup>
 
 </Project>

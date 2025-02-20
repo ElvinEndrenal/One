@@ -30,7 +30,9 @@
     
     <!-- CUSTOM for ONE PROP-->
     <Color x:Key="blackDark">#202020</Color>
+    <Color x:Key="blackLight">#8f8f8f</Color>
     <Color x:Key="background">#f1f1f1</Color>
+    <Color x:Key="temp">#fbfbfb</Color>
     <Color x:Key="primary">#3b82f6</Color>
     <Color x:Key="accepted">#5dc241</Color>
     <Color x:Key="gray">#79747e</Color>

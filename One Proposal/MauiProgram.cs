@@ -7,6 +7,9 @@ namespace One_Proposal {
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts => {
+
+                    fonts.AddFont("Poppins-Regular.ttf", "Poppins");
+                    fonts.AddFont("Poppins-Bold.ttf", "PoppinsBold");
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
