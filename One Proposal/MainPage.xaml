@@ -13,11 +13,12 @@
             Spacing="30">
 
             <Image
-               Source="logoPrimary.png"
-                WidthRequest="100"/>
-            
+               Source="C:\Users\MrZeta\Documents\NuclearCodes\ONE\One Proposal\Resources\Images\assets\logo_primary.png"
+                WidthRequest="300"
+                HeightRequest="150"/>
+
             <Button
-                Text="Test"
+                Text="Test"/>
 
         </VerticalStackLayout>
 

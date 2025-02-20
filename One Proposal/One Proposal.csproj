@@ -60,7 +60,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\assets\logoSecond.png" />
+	  <AndroidResource Remove="Resources\Images\NewFolder\**" />
+	  <Compile Remove="Resources\Images\NewFolder\**" />
+	  <EmbeddedResource Remove="Resources\Images\NewFolder\**" />
+	  <MauiCss Remove="Resources\Images\NewFolder\**" />
+	  <MauiImage Remove="Resources\Images\NewFolder\**" />
+	  <MauiXaml Remove="Resources\Images\NewFolder\**" />
+	  <None Remove="Resources\Images\NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\icon_assets\dashboar.svg" />
 	</ItemGroup>
 
@@ -70,15 +79,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Resources\Images\NewFolder\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Include="Resources\Images\assets\logoSecond.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Page Include="Resources\Images\icon_assets\dashboar.svg" />
+	  <MauiImage Include="Resources\Images\assets\logo_second.png" />
 	</ItemGroup>
 
 </Project>
