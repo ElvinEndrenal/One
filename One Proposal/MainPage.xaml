@@ -16,7 +16,6 @@
             <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
 
-
         <!-- NAV GRID 0:0 -->
         <VerticalStackLayout
             Grid.Row="0" Grid.Column="0">
@@ -37,20 +36,19 @@
             <!-- FRAME is for CORNER RADIUS -->
             
             <Grid
-                
-            Padding="15,0,20,20"
-            ColumnSpacing="20"
-            RowSpacing="20">
+                Padding="15,0,20,20"
+                ColumnSpacing="20"
+                RowSpacing="20">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.2*"/> <!-- for SEARCH etc-->
-                <RowDefinition Height="1*"/>    
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"/> <!-- for SEARCH etc-->
+                    <RowDefinition Height="1*"/>    
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
 
                 <!-- SEARCH TOP PART -->
                 <Grid
@@ -65,11 +63,11 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="3.5*"/>
                     </Grid.ColumnDefinitions>
-                            
-                         <!-- SEARCH -->
-                        <Frame
-                            Padding="0"
-                            CornerRadius="20">
+
+                    <!-- SEARCH -->
+                    <Frame
+                        Padding="0"
+                        CornerRadius="20">
                         <Entry
                             Visual="Default"
                             Grid.Row="0" Grid.Column="0"
@@ -77,57 +75,72 @@
                             VerticalOptions="Fill"
                             Placeholder="Search"
                             BackgroundColor="{StaticResource background}"/>
-                        </Frame>
-                                 <Grid
-                                    Grid.Row="0" Grid.Column="2">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="1*"/>
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="0.3*"/>
-                                            <ColumnDefinition Width="0.3*"/>
-                                            <ColumnDefinition Width="2*"/>
-                                            <ColumnDefinition Width="2*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Button
-                                            Grid.Column="0"
-                                            Text="1"
-                                            Margin="0,0,5,0"
-                                            BackgroundColor="{StaticResource temp}"
-                                            TextColor="{StaticResource primary}"/>
-                                    
-                                        <Button
-                                            Grid.Column="1"
-                                            Text="2"
-                                            Margin="5,0,5,0"
-                                            BackgroundColor="{StaticResource temp}"
-                                            TextColor="{StaticResource primary}"/>
+                    </Frame>
+                    
+                    <!--  // RIGHT PART GRID  -->
+                    <Grid
+                        Grid.Row="0" Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.3*"/>
+                            <ColumnDefinition Width="0.3*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
 
-                                        <Button
-                                            Grid.Column="2"
-                                            Text="02.20.2025"
-                                            Margin="20,0,20,0"
-                                            BackgroundColor="{StaticResource temp}"
-                                            TextColor="{StaticResource blackLight}"/>
-                                        <Button
-                                            Grid.Column="3"
-                                            Text="Club of Programmers"
-                                            Margin="20,0,20,0"
-                                            BackgroundColor="{StaticResource temp}"
-                                            TextColor="{StaticResource blackLight}"/>
-                       
+                        <!-- NOTIF BELL -->
+                        <Button
+                            Grid.Column="0"
+                            Text="1"
+                            Margin="0,0,5,0"
+                            BackgroundColor="{StaticResource temp}"
+                            TextColor="{StaticResource primary}"/>
+
+                        <!--  INBOX  -->
+                        <Button
+                            Grid.Column="1"
+                            Text="2"
+                            Margin="5,0,5,0"
+                            BackgroundColor="{StaticResource temp}"
+                            TextColor="{StaticResource primary}"/>
+
+                        <!--  DATE  -->
+                        <Button
+                            Grid.Column="2"
+                            Text="02.20.2025"
+                            Margin="20,0,20,0"
+                            BackgroundColor="{StaticResource temp}"
+                            TextColor="{StaticResource blackLight}"/>
+                        
+                        <!--  CLUB NAME  -->
+                        <Button
+                            Grid.Column="3"
+                            Text="Club of Programmers"
+                            Margin="20,0,20,0"
+                            BackgroundColor="{StaticResource temp}"
+                            TextColor="{StaticResource blackLight}"/>
 
                     </Grid>
 
                 </Grid>
 
+                
+                
+                
+                
+            <!-- LEFT PANEL (SUBMUT BUTTON  &&  DRAFT) -->
+                
+                <!-- DRAFT -->
                 <Frame
                     Padding="0"
                     CornerRadius="30"
                     BackgroundColor="{StaticResource White}"
                     Grid.Row="1" Grid.Column="0"
                     Grid.RowSpan="3">
-                    
+                
+                <!-- BLUE_SUBMIT BUTTON -->
                     <Frame
                         VerticalOptions="Start"
                         BackgroundColor="{StaticResource primary}"
@@ -143,7 +156,7 @@
                             <StackLayout
                                 VerticalOptions="End"
                                 HorizontalOptions="Start">
-                            <Button
+                                <Button
                                 Text="SUBMIT HERE"
                                 BackgroundColor="White"
                                 WidthRequest="130"
@@ -151,17 +164,17 @@
                                 TextColor="{StaticResource primary}"/>
                             </StackLayout>
                         </VerticalStackLayout>
-
                     </Frame>
-
                 </Frame>
             
+            <!--  UPCOMING / CURRENT EVENTS PANEL  -->
             <VerticalStackLayout
                 BackgroundColor="{StaticResource temp}"
                 Grid.Row="1" Grid.Column="1">
                 <Label Text="GRID 1 1"/>
             </VerticalStackLayout>
             
+            <!--  PROPOSAL STATUS / HISTORY PANEL  -->
             <VerticalStackLayout
                 BackgroundColor="{StaticResource temp}"
                 Grid.Row="2" Grid.Column="1">
