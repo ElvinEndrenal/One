@@ -3,7 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="One_Proposal.MainPage">
 
+        <ScrollView
+        Orientation="Horizontal">
+        <ScrollView
+        Orientation="Vertical">
     <Grid 
+        HeightRequest="780"
+        WidthRequest="1530"
         BackgroundColor="{StaticResource background}">
 
         <!-- BASE STRUCTURE -->
@@ -13,7 +19,7 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
 
         <!-- NAV GRID 0:0 -->
@@ -74,7 +80,8 @@
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="Fill"
                             Placeholder="Search"
-                            BackgroundColor="{StaticResource background}"/>
+                            BackgroundColor="{StaticResource background}"
+                            TextColor="{StaticResource blackDark}"/>
                     </Frame>
                     
                     <!--  // RIGHT PART GRID  -->
@@ -84,8 +91,8 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.3*"/>
-                            <ColumnDefinition Width="0.3*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.7*"/>
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
@@ -94,7 +101,7 @@
                         <Button
                             Grid.Column="0"
                             Text="1"
-                            Margin="0,0,5,0"
+                            Margin="0,0,5,0"   
                             BackgroundColor="{StaticResource temp}"
                             TextColor="{StaticResource primary}"/>
 
@@ -102,7 +109,7 @@
                         <Button
                             Grid.Column="1"
                             Text="2"
-                            Margin="5,0,5,0"
+                            Margin="0,0,20,0"   
                             BackgroundColor="{StaticResource temp}"
                             TextColor="{StaticResource primary}"/>
 
@@ -110,7 +117,7 @@
                         <Button
                             Grid.Column="2"
                             Text="02.20.2025"
-                            Margin="20,0,20,0"
+                            Margin="0,0,20,0"
                             BackgroundColor="{StaticResource temp}"
                             TextColor="{StaticResource blackLight}"/>
                         
@@ -145,7 +152,8 @@
                         VerticalOptions="Start"
                         BackgroundColor="{StaticResource primary}"
                         CornerRadius="30"
-                        HeightRequest="300">
+                        HeightRequest="300"
+                        BorderColor="Transparent">
                         <VerticalStackLayout
                             Padding="30">
                             <Label 
@@ -188,5 +196,6 @@
 
     </Grid>
 
-
+    </ScrollView>   
+    </ScrollView>   
 </ContentPage>
